@@ -108,6 +108,13 @@ a:active { text-decoration: none; }
     font-size: 96px;
     color: red;
     width: 1260px;
+    z-index: 1;
+}
+
+/* Content Cover */
+.content-cover {
+    position: relative;
+    text-align: center;
 }
 
 /* Centered */
@@ -123,6 +130,28 @@ a:active { text-decoration: none; }
     margin: 16px auto;
     font-size: 20px;
     font-family: 'HeronSans Regular';
+}
+
+/* Content Page */
+.content-page {
+    width: 855px;
+    display: inline-block;
+    vertical-align: text-top;
+    padding: 45px 135px;
+    font-family: 'HeronSans Regular';
+}
+
+/* Content Thumbnails */
+.content-thumbnails {
+    display: inline-block;
+    vertical-align: text-top;
+    margin: 15px;
+}
+
+/* Thumbnails IMG */
+.content-thumbnails .thumbnail img {
+    max-width: 390px;
+    max-height: 285px;
 }
 
 /* Content Image */
