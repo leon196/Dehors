@@ -1,6 +1,20 @@
 <?php include("header.php"); ?>
 
-				<div id="content">
+<div id="page">
+	<a href="http://www.de-hors.fr/accueil/">
+	<div id="header-title">
+		<div id="header-title-container-left">DE</div>
+		<div id="header-title-container-middle"></div>
+		<div id="header-title-container-right">HORS</div>
+	</div>
+	</a>
+	<div id="header-cat">
+		<div id="header-cat-button-left"><a href="http://www.de-hors.fr/recherches/">RECHERCHES</a></div>
+		<div id="header-cat-button-middle"><a href="http://www.de-hors.fr/chantiers/">CHANTIERS</a></div>
+		<div id="header-cat-button-right"><a href="http://www.de-hors.fr/collections/">COLLECTIONS</a></div>
+	</div>
+
+				
 					<?php if(have_posts()) : ?>
 					<?php while(have_posts()) : the_post(); ?>
 										
@@ -9,7 +23,7 @@
 	$featuredImage = wp_get_attachment_image_src($imgID, 'full' );//get the url of the featured image (returns an array)
 	$imgURL = $featuredImage[0]; //get the url of the image out of the array ?>
 	<style type="text/css">
-    .header-image {
+    .content-cover {
 	background-image: url(<?php echo $imgURL ?>);
 	background-repeat: no-repeat ;
 	background-position: center;   
@@ -18,6 +32,8 @@
 	-o-background-size: cover;
 	background-size: cover;
 	width:100vw;
+	height:79vw;
+	max-height:1019px;
 	max-width: 1290px;
 	background-color:black;
 	}
@@ -25,13 +41,14 @@
 
 	<?php 
 	}//end if ?>
-
 	</style>
+	<div class="content-cover">
+	<div class="content-title centered"><?php the_title(); ?></div>
+	</div>
+	<div id="content">
 	<div class="header-image">
 	</div>
 					
-	
-						<div class="post-title"><?php the_title(); ?></div>
 
 						<div class="post_content">
 					

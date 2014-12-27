@@ -27,7 +27,7 @@
 	</style>
 
 <div id="page">
-	<a href="http://www.de-hors.fr/accueil/">
+	<a href="<?php echo get_permalink(138); ?>">
 	<div id="header-title">
 		<div id="header-title-container-left">DE</div>
 		<div id="header-title-container-middle"></div>
@@ -35,9 +35,9 @@
 	</div>
 	</a>
 	<div id="header-cat">
-		<div id="header-cat-button-left"><a href="http://www.de-hors.fr/recherches/">RECHERCHES</a></div>
-		<div id="header-cat-button-middle"><a href="http://www.de-hors.fr/chantiers/">CHANTIERS</a></div>
-		<div id="header-cat-button-right"><a href="http://www.de-hors.fr/collections/">COLLECTIONS</a></div>
+		<div id="header-cat-button-left"><a href="<?php echo get_permalink(147); ?>">RECHERCHES</a></div>
+		<div id="header-cat-button-middle"><a href="<?php echo get_permalink(149); ?>">CHANTIERS</a></div>
+		<div id="header-cat-button-right"><a href="<?php echo get_permalink(151); ?>">COLLECTIONS</a></div>
 	</div>
 	<div id="content">
 					<?php if(have_posts()) : ?>
@@ -66,12 +66,13 @@
 	background-color:black;
 	}
 	</style>
-		
+		<a href="<?php echo get_permalink( $page->ID ); ?>"
 			<div class="content-image">
 				<div class="image-button" id="thumbnail-<?php echo $imgID ?>">
 				<div class="image-button-overlay"><?php echo apply_filters( 'the_title', $page->post_title, $page->ID ); ?></div>
 				</div>
 		</div>	
+	</a>
 		</li>
 	<?php endforeach; ?>
 </ul>
