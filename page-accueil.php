@@ -48,38 +48,40 @@
 <ul>
 	<?php foreach ( $pages as $page ) : ?>
 	<li>
-	<?php
-	$imgID = get_post_thumbnail_id($page->ID); //get the id of the featured image
-	$featuredImage = wp_get_attachment_image_src($imgID, 'full' );//get the url of the featured image (returns an array)
-	$imgURL = $featuredImage[0]; //get the url of the image out of the array ?>
-	<style type="text/css">
-    #thumbnail-<?php echo $imgID ?> {
-	background-image: url(<?php echo $imgURL ?>);
-	background-repeat: no-repeat ;
-	background-position: center;   
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-	width:100vw;
-	max-width: 1230px;
-	background-color:black;
-	}
-	</style>
-		
-			<div class="content-image">
-				<div class="image-button" id="thumbnail-<?php echo $imgID ?>">
-				<div class="image-button-overlay"><?php echo apply_filters( 'the_title', $page->post_title, $page->ID ); ?></div>
+		<?php
+			$imgID = get_post_thumbnail_id($page->ID); //get the id of the featured image
+			$featuredImage = wp_get_attachment_image_src($imgID, 'full' );//get the url of the featured image (returns an array)
+			$imgURL = $featuredImage[0]; //get the url of the image out of the array ?>
+		<style type="text/css">
+		    #thumbnail-<?php echo $imgID ?> {
+			background-image: url(<?php echo $imgURL ?>);
+			background-repeat: no-repeat ;
+			background-position: center;   
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			background-size: cover;
+			width:100vw;
+			max-width: 1230px;
+			background-color:black;
+		}
+		</style>
+		<div class="content-image">
+			<div class="image-button" id="thumbnail-<?php echo $imgID ?>">
+					<div class="content-title centered"><?php echo apply_filters( 'the_title', $page->post_title, $page->ID ); ?>
+					</div>
+				<div class="image-button-overlay">
 				</div>
+			</div>
 		</div>	
-		</li>
+	</li>
 	<?php endforeach; ?>
 </ul>
 						
-					<?php endwhile; ?>
-					<?php else : ?>		
-					<p>Désolé, aucun article ne correspond à vos critères.</p>
-					<?php endif; ?>
+<?php endwhile; ?>
+<?php else : ?>		
+<p>Désolé, aucun article ne correspond à vos critères.</p>
+<?php endif; ?>
 	
 </div>		
 
