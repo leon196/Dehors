@@ -1,0 +1,8 @@
+@font-face {
+	font-family: 'HeronSansCond Regular';
+	src: url('font_bureau_-_heronsanscond_regular-webfont.eot');
+	src: url('font_bureau_-_heronsanscond_regular-webfont.eot?#iefix') format('embedded-opentype'),
+		url('font_bureau_-_heronsanscond_regular-webfont.woff') format('woff'),
+		url('font_bureau_-_heronsanscond_regular-webfont.ttf') format('truetype'),
+		url('font_bureau_-_heronsanscond_regular-webfont.svg') format('svg');
+}

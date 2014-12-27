@@ -1,0 +1,8 @@
+@font-face {
+	font-family: 'HeronSans Semibold';
+	src: url('font_bureau_-_heronsans_semibold-webfont.eot');
+	src: url('font_bureau_-_heronsans_semibold-webfont.eot?#iefix') format('embedded-opentype'),
+		url('font_bureau_-_heronsans_semibold-webfont.woff') format('woff'),
+		url('font_bureau_-_heronsans_semibold-webfont.ttf') format('truetype'),
+		url('font_bureau_-_heronsans_semibold-webfont.svg') format('svg');
+}
