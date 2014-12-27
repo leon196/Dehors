@@ -53,7 +53,14 @@
 						<div class="post_content">
 					
 							<?php the_content(); ?>
-							
+							<?php 
+							$categorySlug = get_the_slug();
+							$idObj = get_category_by_slug('$categorySlug'); 
+							$id = $idObj->term_id;
+							echo $categorySlug
+							?>
+
+
 						</div>
 						
 					<?php endwhile; ?>
