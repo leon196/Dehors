@@ -43,7 +43,7 @@
 					<?php if(have_posts()) : ?>
 					<?php while(have_posts()) : the_post(); ?>
 									<div class="content-text"><?php the_content(); ?></div>	
-<?php $pages = get_pages( array( 'child_of' => 147,149, 'excule_tree' => 147,149) ); ?> 
+<?php $pages = get_pages( array( 'child_of' => 147, 'excule_tree' => 147) ); ?> 
 
 <ul>
 	<?php foreach ( $pages as $page ) : ?>
@@ -62,6 +62,8 @@
 			-o-background-size: cover;
 			background-size: cover;
 			width:100vw;
+			height:79vw;
+			max-height:995px;
 			max-width: 1260px;
 			background-color:black;
 		}
