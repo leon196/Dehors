@@ -27,7 +27,7 @@
 	</style>
 
 <div id="page">
-	<a href="http://www.de-hors.fr/accueil/">
+	<a href="<?php echo get_permalink(138); ?>">
 	<div id="header-title">
 		<div id="header-title-container-left">DE</div>
 		<div id="header-title-container-middle"></div>
@@ -61,7 +61,7 @@
 			-o-background-size: cover;
 			background-size: cover;
 			width:100vw;
-			max-width: 1230px;
+			max-width: 1260px;
 			background-color:black;
 		}
 		</style>

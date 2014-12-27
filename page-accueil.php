@@ -62,7 +62,7 @@
 			-o-background-size: cover;
 			background-size: cover;
 			width:100vw;
-			max-width: 1230px;
+			max-width: 1260px;
 			background-color:black;
 		}
 		</style>
