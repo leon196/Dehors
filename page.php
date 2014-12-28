@@ -31,9 +31,8 @@
 			-moz-background-size: cover;
 			-o-background-size: cover;
 			background-size: cover;
-			width:100vw;
 			height:79vw;
-			max-height:1019px;
+			max-height: 1017px;
 			max-width: 1290px;
 			background-color:black;
 		}
@@ -46,9 +45,10 @@
 </div>
 <div id="content">
 
-	<div class="content-page">
+	<div class="content-text-container">
+		<div class="content-text">
 		<?php the_content(); ?>
-		
+		</div>
 	</div>
 
 	<div class="content-thumbnails">
@@ -76,7 +76,7 @@
 					-moz-background-size: cover;
 					-o-background-size: cover;
 					background-size: cover;
-					width:100vw;
+					width:33vw;
 					height:79vw;
 					max-height:285px;
 					max-width: 390px;
@@ -95,6 +95,8 @@
 			</li>
 			<?php endforeach; ?>
 		</ul>
+	</div>
+	<div class="footer">
 	</div>
 
 					
