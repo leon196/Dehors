@@ -50,6 +50,9 @@
 	</div>
 
 		<div class="content-page-annotated">
+			<div class="annotation">
+			de viser le propre sans répit et en toute certitude, rares finalement sont les expériences
+			</div>
 			<?php the_content(); ?>
 		</div>
 

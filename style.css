@@ -150,7 +150,18 @@ font-size: 154px;
 
 /* Content Page Annotated */
 .content-page-annotated {
-    
+    position: relative;
+    padding-left: 165px;
+    padding-right: 30px;
+    width: 750px;
+}
+
+/* Annotation */
+.annotation {
+    position: absolute;
+    width: 135px;
+    left: 15px;
+    text-align: right;
 }
 
 /* Content Thumbnails */
