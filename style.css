@@ -157,11 +157,25 @@ font-size: 154px;
 
 /* Content Page */
 .content-page {
-    width: 855px;
     display: inline-block;
     vertical-align: text-top;
-    padding: 45px 135px;
     font-family: 'HeronSans Regular';
+}
+
+/* Content Page Annotated */
+.content-page-annotated {
+    position: relative;
+    padding-left: 165px;
+    padding-right: 30px;
+    width: 750px;
+}
+
+/* Annotation */
+.annotation {
+    position: absolute;
+    width: 135px;
+    left: 15px;
+    text-align: right;
 }
 
 /* Content Thumbnails */
@@ -223,7 +237,6 @@ font-size: 154px;
 @media screen and (max-width: 660px)
 {
     /* Header Gray Bar */
-    /* NOT WORKING */
     #header-cat {
         height: 168px;
     }
@@ -254,10 +267,15 @@ font-size: 154px;
 	text-align: center;
     }
 
+    .content-page {
+        width: 750px;
+        padding: 45px 5%;
+    }
+
 }
 
 /* Big screens */
-@media screen and (min-width: 1290px)
+@media screen and (min-width: 1289px)
 {
     /* Main Container */
     #page {
@@ -267,6 +285,11 @@ font-size: 154px;
     .content-text {
     max-width: 1020px;
     }
+
+    .content-page {
+        width: 850px;
+        padding: 45px 5%;
+    }    
 }
 
 
