@@ -42,46 +42,71 @@
 	<?php } ?>
 </style>
 <div class="content-cover">
-	<div class="content-title centered"><?php the_title(); ?></div>
+	<div class="content-title cover-title centered"><?php the_title(); ?></div>
 </div>
 <div id="content">
 
 	<div class="content-page">
 		<?php the_content(); ?>
+		
 	</div>
 
 	<div class="content-thumbnails">
-		<div class="thumbnail">
-			<img src="<?php echo $imgURL ?>"/>
-		</div>
+		<?php 
+		$categorySlug = get_the_slug();
+		$args = array(
+				'category_name' => $categorySlug,
+				'order' => 'ASC'
+		);
+		$posts = get_posts( $args ); ?> 
+		
+		<ul>
+			<?php foreach ( $posts as $post ) : ?>
+			<li>
+				<?php
+					$imgID = get_post_thumbnail_id($post->ID); //get the id of the featured image
+					$featuredImage = wp_get_attachment_image_src($imgID, 'full' );//get the url of the featured image (returns an array)
+					$imgURL = $featuredImage[0]; //get the url of the image out of the array ?>
+				<style type="text/css">
+				    #thumbnail-<?php echo $imgID ?> {
+					background-image: url(<?php echo $imgURL ?>);
+					background-repeat: no-repeat ;
+					background-position: center;   
+					-webkit-background-size: cover;
+					-moz-background-size: cover;
+					-o-background-size: cover;
+					background-size: cover;
+					width:100vw;
+					height:79vw;
+					max-height:285px;
+					max-width: 390px;
+					background-color:black;
+				}
+				</style>
+				<div class="content-image">
+					<a href="<?php echo get_permalink( $post->ID ); ?>">
+						<div class="image-button" id="thumbnail-<?php echo $imgID ?>">
+							<div class="content-title centered"><?php echo apply_filters( 'the_title', $post->post_title, $post->ID ); ?>
+							</div>
+							<div class="image-button-overlay"></div>
+						</div>
+					</a>
+				</div>	
+			</li>
+			<?php endforeach; ?>
+		</ul>
 	</div>
 
-<<<<<<< HEAD
-						<div class="post_content">
 					
-							<?php the_content(); ?>
-							<?php 
-							$categorySlug = get_the_slug();
-							$idObj = get_category_by_slug('$categorySlug'); 
-							$id = $idObj->term_id;
-							echo $categorySlug
-							?>
-
-
-						</div>
+	
 						
 					<?php endwhile; ?>
 					<?php else : ?>		
 					<p>Désolé, aucun article ne correspond à vos critères.</p>
 					<?php endif; ?>
 				</div>
-=======
-<?php endwhile; ?>
-<?php else : ?>		
-	<p>Désolé, aucun article ne correspond à vos critères.</p>
-<?php endif; ?>
-</div>
->>>>>>> d212de51eed3e8594f64915d08b663bb4d7ffdb1
+
+
 
 
 </body>

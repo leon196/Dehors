@@ -24,6 +24,7 @@
     background-color: #dcddde;
     color: #f1f2f2;
 }
+#header-cat a { color:#f1f2f2;}
 	</style>
 
 <div id="page">

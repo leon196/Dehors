@@ -18,7 +18,7 @@ html {
 	padding:0px !important;
 }
 body {
-    background-color: #e1ddda;
+    background-color: #c7c8ca;
 }
 img, object, embed, video {
 	max-width: 100%;
@@ -34,6 +34,8 @@ a:link { text-decoration: none; }
 a:visited { text-decoration: none; }
 a:hover { text-decoration: none; }
 a:active { text-decoration: none; }
+#header-cat a { color:#DCDDDE;}
+
 
 /* afficher le texte sélectionné dans un paragraphe en blanc sur fond noir */
 ::-moz-selection { color: white;  background: red; }
@@ -104,11 +106,17 @@ a:active { text-decoration: none; }
 
 /* Content Title */
 .content-title {
-    font-family: 'HeronSans Regular';
-    font-size: 96px;
-    color: red;
-    width: 1260px;
+    font-family: 'HeronSansCond Medium';
+    font-size: 54px;
+    color: #DA2128;
+    max-width: 1092px;
     z-index: 1;
+    text-transform: uppercase;
+}
+
+.cover-title
+{
+font-size: 154px;
 }
 
 /* Content Cover */
@@ -129,6 +137,7 @@ a:active { text-decoration: none; }
 	max-width: 1020px;
     margin: 16px auto;
     font-size: 20px;
+
     font-family: 'HeronSans Regular';
 }
 
@@ -171,9 +180,10 @@ a:active { text-decoration: none; }
 /* Image button Overlay */
 .image-button-overlay {
     position: absolute;
+    background-color:#dcddde;
     width: 2000px;
     height: 2000px;
-    opacity: 0.5;
+    opacity: 0.2;
 }
 .image-button:hover .image-button-overlay {
     background-color: white;
