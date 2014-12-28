@@ -38,8 +38,8 @@ a:active { text-decoration: none; }
 
 
 /* afficher le texte sélectionné dans un paragraphe en blanc sur fond noir */
-::-moz-selection { color: white;  background: red; }
-::selection      { color: white;  background: red; }
+::-moz-selection { color: white;  background: #da2128; }
+::selection      { color: white;  background: #da2128; }
 
 /* Common for each screens */
 
@@ -47,6 +47,7 @@ a:active { text-decoration: none; }
 #page {
     margin: 0 auto;
     background-color: #f1f2f2;
+    background-image: url("img/background-grid.jpg");
 }
 
 /* Header Title */
@@ -97,11 +98,11 @@ a:active { text-decoration: none; }
     line-height: 56px;
     font-family: 'HeronSansCond Medium';
     text-align: center;
+    letter-spacing: 0.03em;
 }
 
 /* Content */
 #content {
-    padding: 8px;
 }
 
 /* Content Title */
@@ -135,10 +136,23 @@ font-size: 154px;
 /* Content Text */
 .content-text {
 	max-width: 1020px;
-    margin: 16px auto;
+    margin: auto;
     font-size: 20px;
-
     font-family: 'HeronSans Regular';
+}
+
+.accueil-text {
+    margin: 25px auto;
+    font-size: 33px;
+    font-family: "HeronSansCond Light";
+    line-height: 45px;
+    font-weight: 100;
+    letter-spacing: 0.01em;
+}
+.category-text {
+	line-height: 30px;
+	margin: 22px auto;
+	
 }
 
 /* Content Page */
@@ -183,10 +197,11 @@ font-size: 154px;
     background-color:#dcddde;
     width: 2000px;
     height: 2000px;
-    opacity: 0.2;
+    opacity: 0;
 }
-.image-button:hover .image-button-overlay {
-    background-color: white;
+.image-button-overlay:hover  {
+    background-color: #dcddde;
+    opacity: 0,5;
 }
 
 /* Img inside Image Button */

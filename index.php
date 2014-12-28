@@ -1,7 +1,7 @@
 <?php include("header.php"); ?>
       <!-- BACKGROUND -->
         <div class="background noselect">
-
+			<a href="<?php echo get_permalink(138); ?>">
             <!-- BARRE -->
             <div class="barre"></div>
 
@@ -87,6 +87,7 @@ CYRILLE WEINER, photographe
                 </div>
             </div>
         </div>
+        </a>
 </div>
 </body>
 </html>
