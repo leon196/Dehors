@@ -48,19 +48,16 @@
 	<div id="content">
 	<div class="header-image">
 	</div>
-					
 
-						<div class="post_content">
-					
-							<?php the_content(); ?>
-							
-						</div>
-						
-					<?php endwhile; ?>
-					<?php else : ?>		
-					<p>Désolé, aucun article ne correspond à vos critères.</p>
-					<?php endif; ?>
-				</div>
+		<div class="content-page-annotated">
+			<?php the_content(); ?>
+		</div>
+
+	<?php endwhile; ?>
+	<?php else : ?>		
+	<p>Désolé, aucun article ne correspond à vos critères.</p>
+	<?php endif; ?>
+</div>
 
 
 </body>
