@@ -213,6 +213,15 @@ font-size: 154px;
     left: 15px;
     text-align: right;
 }
+.anoted {
+	position: absolute;
+	right: 100%;
+	padding-right: 25px;
+	text-align: right;
+	font-size:10px;
+	line-height:15px;
+	width:180px;
+}
 
 /* Content Thumbnails */
 .content-thumbnails {

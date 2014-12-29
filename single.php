@@ -33,7 +33,7 @@
 	background-size: cover;
 	width:100vw;
 	height:79vw;
-	max-height:1019px;
+	max-height:1020px;
 	max-width: 1290px;
 	}
 	</style>
