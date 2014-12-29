@@ -34,7 +34,6 @@
 			height:79vw;
 			max-height: 1009px;
 			max-width: 1290px;
-			background-color:black;
 		}
 	</style>
 
@@ -78,9 +77,8 @@
 					background-size: cover;
 					width:33vw;
 					height:26vw;
-					max-height:285px;
-					max-width: 390px;
-					background-color:black;
+					max-height: 315px;
+					max-width: 420px;
 				}
 				</style>
 				<div class="content-image">

@@ -65,7 +65,6 @@
 			height:79vw;
 			max-height:995px;
 			max-width: 1260px;
-			background-color:black;
 		}
 		</style>
 		<div class="content-image">

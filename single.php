@@ -35,7 +35,6 @@
 	height:79vw;
 	max-height:1019px;
 	max-width: 1290px;
-	background-color:black;
 	}
 	</style>
 
@@ -49,12 +48,57 @@
 	<div class="header-image">
 	</div>
 
-		<div class="content-page-annotated">
-			<div class="annotation">
-			de viser le propre sans répit et en toute certitude, rares finalement sont les expériences
-			</div>
+		<div class="content-page-article">
 			<?php the_content(); ?>
 		</div>
+
+			<div class="content-thumbnails">
+		<?php 
+		$categories = get_the_category();
+		$category_id = $categories[0]->cat_ID;
+		$args = array(
+				'category' => $category_id,
+				'order' => 'ASC'
+		);
+		$posts = get_posts( $args ); ?> 
+		
+		<ul>
+			<?php foreach ( $posts as $post ) : ?>
+			<li>
+				<?php
+					$imgID = get_post_thumbnail_id($post->ID); //get the id of the featured image
+					$featuredImage = wp_get_attachment_image_src($imgID, 'full' );//get the url of the featured image (returns an array)
+					$imgURL = $featuredImage[0]; //get the url of the image out of the array ?>
+				<style type="text/css">
+				    #thumbnail-<?php echo $imgID ?> {
+					background-image: url(<?php echo $imgURL ?>);
+					background-repeat: no-repeat ;
+					background-position: center;   
+					-webkit-background-size: cover;
+					-moz-background-size: cover;
+					-o-background-size: cover;
+					background-size: cover;
+					width:33vw;
+					height:26vw;
+					max-height: 165px;
+					max-width: 210px;
+				}
+				</style>
+				<div class="content-image">
+					<a href="<?php echo get_permalink( $post->ID ); ?>">
+						<div class="image-button" id="thumbnail-<?php echo $imgID ?>">
+							<div class="content-title article-thumbnail centered"><?php echo apply_filters( 'the_title', $post->post_title, $post->ID ); ?>
+							</div>
+							<div class="image-button-overlay"></div>
+						</div>
+					</a>
+				</div>	
+			</li>
+			<?php endforeach; ?>
+		</ul>
+	</div>
+	<div class="footer">
+	</div>
 
 	<?php endwhile; ?>
 	<?php else : ?>		
