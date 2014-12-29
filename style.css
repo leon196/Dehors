@@ -47,7 +47,7 @@ a:active { text-decoration: none; }
 #page {
     margin: 0 auto;
     background-color: #f1f2f2;
-/*     background-image: url("img/background-grid.jpg"); */
+    background-image: url("img/background-grid.jpg");
 }
 
 /* Header Title */
@@ -137,21 +137,23 @@ font-size: 154px;
 
 /* Content Text */
 .content-text {
-	max-width: 1020px;
-    margin: auto;
-    font-size: 20px;
-    font-family: 'HeronSans Regular';
 }
 
 .accueil-text {
     margin: 25px auto;
+    margin-bottom: 34px;
     font-size: 33px;
-    font-family: "HeronSansCond Light";
+    font-family: "HeronSans Light";
     line-height: 45px;
     font-weight: 100;
     letter-spacing: 0.01em;
+    max-width: 1020px;
 }
 .category-text {
+	max-width: 1020px;
+    margin: auto;
+    font-size: 20px;
+    font-family: 'HeronSans Regular';
 	line-height: 30px;
 	margin: 22px auto;
 	
@@ -160,13 +162,19 @@ font-size: 154px;
 /* Content Page */
 .content-text-container {
 	max-width:840px;
-	width:63vw;
+	width: 62vw;
+	padding-right: 15px;
 	padding-left:15px;
 	float:left;
 }
 .content-text {
-    vertical-align: text-top;
     font-family: 'HeronSans Regular';
+    width:600px;
+    margin:auto;
+
+}
+.page-text {
+	font-family: 'proxima-nova';
     width:600px;
     margin:auto;
 }
@@ -175,6 +183,7 @@ font-size: 154px;
 	width:100vh;
 	
 }
+
 /* Content Page Annotated */
 .content-page-annotated {
     position: relative;
@@ -244,6 +253,14 @@ font-size: 154px;
 }
 .image-button:hover .content-title {
     display: block;
+}
+h1 {
+	font-size: 54px;
+	font-family: 'HeronSansCond Medium';
+	font-weight:100;
+	text-transform:uppercase;
+	letter-spacing: 0.01em;
+
 }
 /* Tiny screens */
 @media screen and (max-width: 660px)

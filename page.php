@@ -32,7 +32,7 @@
 			-o-background-size: cover;
 			background-size: cover;
 			height:79vw;
-			max-height: 1017px;
+			max-height: 1009px;
 			max-width: 1290px;
 			background-color:black;
 		}
@@ -46,7 +46,7 @@
 <div id="content">
 
 	<div class="content-text-container">
-		<div class="content-text">
+		<div class="page-text">
 		<?php the_content(); ?>
 		</div>
 	</div>
@@ -77,7 +77,7 @@
 					-o-background-size: cover;
 					background-size: cover;
 					width:33vw;
-					height:79vw;
+					height:26vw;
 					max-height:285px;
 					max-width: 390px;
 					background-color:black;

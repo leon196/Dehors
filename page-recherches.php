@@ -43,7 +43,7 @@
 	<div id="content">
 					<?php if(have_posts()) : ?>
 					<?php while(have_posts()) : the_post(); ?>
-									<div class="content-text category-text"><?php the_content(); ?></div>	
+									<div class="category-text"><?php the_content(); ?></div>	
 <?php $pages = get_pages( array( 'child_of' => 147, 'excule_tree' => 147) ); ?> 
 <ul>
 	<?php foreach ( $pages as $page ) : ?>
