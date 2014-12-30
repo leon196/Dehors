@@ -71,7 +71,7 @@
 		<div class="content-image">
 			<a href="<?php echo get_permalink( $page->ID ); ?>">
 				<div class="image-button" id="thumbnail-<?php echo $imgID ?>">
-					<div class="content-title hidden centered"><?php echo apply_filters( 'the_title', $page->post_title, $page->ID ); ?>
+					<div class="content-title centered"><?php echo apply_filters( 'the_title', $page->post_title, $page->ID ); ?>
 					</div>
 					<div class="image-button-overlay"></div>
 				</div>
