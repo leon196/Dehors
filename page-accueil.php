@@ -44,8 +44,12 @@
 					<?php if(have_posts()) : ?>
 					<?php while(have_posts()) : the_post(); ?>
 									<div class="accueil-text"><?php the_content(); ?></div>	
-<?php $pages = get_pages( array( 'child_of' => 147, 'excule_tree' => 147) ); ?> 
-
+<?php 	$args = array(
+				'child_of' => 147,
+				'excule_tree' => 147,
+				'sort_order' => 'DESC'
+		);
+		$pages = get_pages( $args ); ?> 
 <ul>
 	<?php foreach ( $pages as $page ) : ?>
 	<li>
@@ -87,7 +91,7 @@
 <?php endif; ?>
 	
 </div>		
-
+	<?php include("footer.php"); ?>
 </body>
 </html>
 </body>

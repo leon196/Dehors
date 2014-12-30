@@ -49,6 +49,10 @@ a:active { text-decoration: none; }
     background-color: #f1f2f2;
 /*     background-image: url("img/background-grid.jpg"); */
 }
+p {
+	margin-top: 10px;
+	margin-bottom: 15px;
+}
 
 /* Header Title */
 #header-title {
@@ -57,7 +61,7 @@ a:active { text-decoration: none; }
     position: relative;
     color: #f1f2f2;
     font-size: 54px;
-    font-family: 'HeronSansCond Medium';
+    font-family: 'HeronSansCond Medium', sans-serif;
     overflow: hidden;
 }
 
@@ -96,7 +100,7 @@ a:active { text-decoration: none; }
     color: #dcddde;
     font-size: 35px;
     line-height: 56px;
-    font-family: 'HeronSansCond Medium';
+    font-family: 'HeronSansCond Medium', sans-serif;
     text-align: center;
     letter-spacing: 0.03em;
 }
@@ -109,7 +113,7 @@ position:relative;
 
 /* Content Title */
 .content-title {
-    font-family: 'HeronSansCond Medium';
+    font-family: 'HeronSansCond Medium', sans-serif;
     font-size: 54px;
     color: #DA2128;
     max-width: 1092px;
@@ -119,7 +123,7 @@ position:relative;
 
 .cover-title
 {
-    font-family: 'HeronSansCond Medium';
+    font-family: 'HeronSansCond Medium', sans-serif;
     color: #DA2128;
     max-width: 1092px;
     z-index: 1;
@@ -152,7 +156,7 @@ position:relative;
     margin: 25px auto;
     margin-bottom: 34px;
     font-size: 33px;
-    font-family: "HeronSans Light";
+    font-family: "HeronSans Light", sans-serif;
     line-height: 45px;
     font-weight: 100;
     letter-spacing: 0.01em;
@@ -162,7 +166,7 @@ position:relative;
 	max-width: 1020px;
     margin: auto;
     font-size: 20px;
-    font-family: 'HeronSans Regular';
+    font-family: 'HeronSans Regular', sans-serif;
 	line-height: 30px;
 	margin: 22px auto;
 	
@@ -177,13 +181,13 @@ position:relative;
 	float:left;
 }
 .content-text {
-    font-family: 'HeronSans Regular';
+    font-family: 'HeronSans Regular', sans-serif;
     width:600px;
     margin:auto;
 
 }
 .page-text {
-	font-family: "HeronSans Light";
+	font-family: "HeronSans Light", sans-serif;
 	width: 600px;
 	margin: auto;
 	line-height: 30px;
@@ -192,7 +196,14 @@ position:relative;
 }
 .footer {
 	clear:both;
-	width:100vh;
+	background-color: #DCDDDE;
+position: relative;
+color: #F1F2F2;
+font-size: 35px;
+line-height: 56px;
+font-family: "HeronSansCond Medium",sans-serif;
+text-align: center;
+letter-spacing: 0.03em;
 	
 }
 
@@ -203,12 +214,12 @@ position:relative;
     width: 705px;
 	left: 225px;
 	margin-top: 11px;
-	font-family: "HeronSans Light";
+	font-family: "HeronSans Light", sans-serif;
 	line-height: 30px;
 	font-size: 20px;
 }
 .content-page-article img {
-	margin-bottom:15px;
+margin-bottom: 10px;
 }
 
 .article-thumbnail {
@@ -367,14 +378,14 @@ margin-bottom: 12px;
 }
 .bigLetter
 {
-    font-family: 'HeronSansCond-Light';
+    font-family: 'HeronSansCond-Light', sans-serif;
     font-size: 352px;
     margin-left: -26px;
     color:white;
 }
 .smallLetter
 {
-    font-family: 'HeronSans Light';
+    font-family: 'HeronSans Light', sans-serif;
     font-size: 11px;
     line-height: 15px;
     text-shadow: 2px 2px 11px #000000;

@@ -47,6 +47,8 @@
 	<div id="content">
 		<div class="content-page-article">
 			<?php the_content(); ?>
+			<?php edit_post_link('edit', '<p>', '</p>'); ?>
+	
 		</div>
 
 			<div class="content-thumbnails">
@@ -94,15 +96,14 @@
 			<?php endforeach; ?>
 		</ul>
 	</div>
-	<div class="footer">
-	</div>
+	
 
 	<?php endwhile; ?>
 	<?php else : ?>		
 	<p>Désolé, aucun article ne correspond à vos critères.</p>
 	<?php endif; ?>
 </div>
-
+	<?php include("footer.php"); ?>
 
 </body>
 </html>

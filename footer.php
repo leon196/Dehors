@@ -1,5 +1,3 @@
-<div id="footer">
-<p>
-Copyright &#169; <?php print(date(Y)); ?> <?php bloginfo('name'); ?>
-</p>
+<div class="footer">
+Copyright &#169; <?php print(date(Y)); ?>
 </div>
