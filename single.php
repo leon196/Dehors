@@ -42,12 +42,9 @@
 	}//end if ?>
 	</style>
 	<div class="content-cover">
-	<div class="content-title cover-title centered"><?php the_title(); ?></div>
+	<div class="content-title cover-title hidden centered"><?php the_title(); ?></div>
 	</div>
 	<div id="content">
-	<div class="header-image">
-	</div>
-
 		<div class="content-page-article">
 			<?php the_content(); ?>
 		</div>

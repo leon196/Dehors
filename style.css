@@ -119,7 +119,16 @@ position:relative;
 
 .cover-title
 {
-font-size: 154px;
+    font-family: 'HeronSansCond Medium';
+    color: #DA2128;
+    max-width: 1092px;
+    z-index: 1;
+    text-transform: uppercase;
+	font-size: 154px;
+}
+
+.hidden:hover {
+	opacity:0;
 }
 
 /* Content Cover */
@@ -257,6 +266,7 @@ font-size: 154px;
 .image-button-overlay:hover  {
     background-color: #dcddde;
     opacity: 0.5;
+    
 }
 
 /* Img inside Image Button */
