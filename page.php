@@ -85,7 +85,7 @@
 				<div class="content-image">
 					<a href="<?php echo get_permalink( $post->ID ); ?>">
 						<div class="image-button" id="thumbnail-<?php echo $imgID ?>">
-							<div class="content-title noselect hidden centered"><?php echo apply_filters( 'the_title', $post->post_title, $post->ID ); ?>
+							<div class="content-title noselect centered"><?php echo apply_filters( 'the_title', $post->post_title, $post->ID ); ?>
 							</div>
 							<div class="image-button-overlay"></div>
 						</div>

@@ -264,6 +264,17 @@ margin-bottom: 10px;
     height:1000px;
     overflow: hidden;
     margin: 0 auto;
+    border: 15px solid #f1f2f2;
+}
+
+/* Img inside Image Button */
+.image-button:hover {
+    border: 15px solid white;
+}
+
+.image-button:hover .image-button-overlay {
+    background-color: #dcddde;
+    opacity: 0.5;
 }
 
 /* Image button Overlay */
@@ -273,19 +284,6 @@ margin-bottom: 10px;
     width: 2000px;
     height: 2000px;
     opacity: 0;
-}
-.image-button-overlay:hover  {
-    background-color: #dcddde;
-    opacity: 0.5;
-    
-}
-
-/* Img inside Image Button */
-.image-button {
-    border: 15px solid #f1f2f2;
-}
-.image-button:hover {
-    border: 15px solid white;
 }
 
 /* Image Button Title */
@@ -340,7 +338,6 @@ margin-bottom: 12px;
     }
 
     .content-page {
-
     }
 
 }
